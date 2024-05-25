@@ -1,0 +1,259 @@
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Sid": "AllowOtherCommands",
+			"Effect": "Allow",
+			"Action": [
+				"iam:AddRoleToInstanceProfile",
+				"iam:AttachRolePolicy",
+				"iam:CreateInstanceProfile",
+				"iam:CreateRole",
+				"iam:ListPolicies",
+				"iam:PutRolePolicy",
+				"elasticloadbalancing:DescribeLoadBalancers",
+				"kms:CreateKey",
+                "kms:CreateAlias",
+				"kms:PutKeyPolicy",
+				"kms:TagResource",
+				"organizations:ListAWSServiceAccessForOrganization",
+				"sts:GetCallerIdentity",
+				"tag:GetResources"
+			],
+			"Resource": "*"
+		},
+		{
+			"Sid": "AllowEC2Commands",
+			"Effect": "Allow",
+			"Action": [
+				"ec2:CreateTags",
+				"ec2:CreateLaunchTemplate",
+				"ec2:DeleteLaunchTemplate",
+				"ec2:DescribeAccountAttributes",
+				"ec2:DescribeAddresses",
+				"ec2:DescribeAvailabilityZones",
+				"ec2:DescribeNetworkInterfaces",
+				"ec2:DescribeFleets",
+				"ec2:DescribeHosts",
+				"ec2:DescribeImages",
+				"ec2:DescribeInstanceStatus",
+				"ec2:DescribeInstanceAttribute",
+				"ec2:DescribeInstanceTypes",
+				"ec2:DescribeInstances",
+				"ec2:DescribeKeyPairs",
+				"ec2:DescribeLaunchTemplateVersions",
+				"ec2:DescribeLaunchTemplates",
+				"ec2:DescribePlacementGroups",
+				"ec2:DescribeRegions",
+				"ec2:DescribeSecurityGroups",
+				"ec2:DescribeSnapshots",
+				"ec2:DescribeSpotFleetRequests",
+				"ec2:DescribeSpotInstanceRequests",
+				"ec2:DescribeSpotPriceHistory",
+				"ec2:DescribeSubnets",
+				"ec2:DescribeTags",
+				"ec2:DescribeVolumeStatus",
+				"ec2:DescribeVolumes",
+				"ec2:DescribeVpcs",
+				"ec2:GetInstanceTypesFromInstanceRequirements",
+				"ec2:GetSpotPlacementScores",
+				"ec2:CreateFleet",
+				"ec2:DeleteFleets",
+				"ec2:RunInstances",
+				"ec2:TerminateInstances",
+				"ec2:DescribeSecurityGroupRules"
+			],
+			"Resource": "*"
+		},
+		{
+			"Sid": "AllowAutoScalingCommands",
+			"Effect": "Allow",
+			"Action": [
+				"autoscaling:AttachInstances",
+				"autoscaling:AttachLoadBalancerTargetGroups",
+				"autoscaling:AttachLoadBalancers",
+				"autoscaling:AttachTrafficSources",
+				"autoscaling:BatchDeleteScheduledAction",
+				"autoscaling:BatchPutScheduledUpdateGroupAction",
+				"autoscaling:CancelInstanceRefresh",
+				"autoscaling:CompleteLifecycleAction",
+				"autoscaling:CreateAutoScalingGroup",
+				"autoscaling:CreateLaunchConfiguration",
+				"autoscaling:CreateOrUpdateTags",
+				"autoscaling:DeleteAutoScalingGroup",
+				"autoscaling:DeleteLaunchConfiguration",
+				"autoscaling:DeleteLifecycleHook",
+				"autoscaling:DeleteNotificationConfiguration",
+				"autoscaling:DeletePolicy",
+				"autoscaling:DeleteScheduledAction",
+				"autoscaling:DeleteTags",
+				"autoscaling:DeleteWarmPool",
+				"autoscaling:DescribeAccountLimits",
+				"autoscaling:DescribeAdjustmentTypes",
+				"autoscaling:DescribeAutoScalingGroups",
+				"autoscaling:DescribeAutoScalingInstances",
+				"autoscaling:DescribeAutoScalingNotificationTypes",
+				"autoscaling:DescribeInstanceRefreshes",
+				"autoscaling:DescribeLaunchConfigurations",
+				"autoscaling:DescribeLifecycleHookTypes",
+				"autoscaling:DescribeLifecycleHooks",
+				"autoscaling:DescribeLoadBalancerTargetGroups",
+				"autoscaling:DescribeLoadBalancers",
+				"autoscaling:DescribeMetricCollectionTypes",
+				"autoscaling:DescribeNotificationConfigurations",
+				"autoscaling:DescribePolicies",
+				"autoscaling:DescribeScalingActivities",
+				"autoscaling:DescribeScalingProcessTypes",
+				"autoscaling:DescribeScheduledActions",
+				"autoscaling:DescribeTags",
+				"autoscaling:DescribeTerminationPolicyTypes",
+				"autoscaling:DescribeTrafficSources",
+				"autoscaling:DescribeWarmPool",
+				"autoscaling:DetachInstances",
+				"autoscaling:DetachLoadBalancerTargetGroups",
+				"autoscaling:DetachLoadBalancers",
+				"autoscaling:DetachTrafficSources",
+				"autoscaling:DisableMetricsCollection",
+				"autoscaling:EnableMetricsCollection",
+				"autoscaling:EnterStandby",
+				"autoscaling:ExecutePolicy",
+				"autoscaling:ExitStandby",
+				"autoscaling:GetPredictiveScalingForecast",
+				"autoscaling:PutLifecycleHook",
+				"autoscaling:PutNotificationConfiguration",
+				"autoscaling:PutScalingPolicy",
+				"autoscaling:PutScheduledUpdateGroupAction",
+				"autoscaling:PutWarmPool",
+				"autoscaling:RecordLifecycleActionHeartbeat",
+				"autoscaling:ResumeProcesses",
+				"autoscaling:RollbackInstanceRefresh",
+				"autoscaling:SetDesiredCapacity",
+				"autoscaling:SetInstanceHealth",
+				"autoscaling:SetInstanceProtection",
+				"autoscaling:StartInstanceRefresh",
+				"autoscaling:SuspendProcesses",
+				"autoscaling:TerminateInstanceInAutoScalingGroup",
+				"autoscaling:UpdateAutoScalingGroup"
+			],
+			"Resource": "*"
+		},
+		{
+			"Sid": "AllowCloudTrailCommands",
+			"Effect": "Allow",
+			"Action": [
+				"cloudtrail:AddTags",
+				"cloudtrail:DescribeTrails",
+				"cloudtrail:CreateTrail",
+				"cloudtrail:GetTrailStatus",
+				"cloudtrail:PutEventSelectors",
+				"cloudtrail:PutInsightSelectors",
+				"cloudtrail:StartLogging"
+			],
+			"Resource": "*"
+		},
+		{
+			"Sid": "AllowCloudWatchCommands",
+			"Effect": "Allow",
+			"Action": [
+				"cloudwatch:GetMetricData",
+				"cloudwatch:ListMetrics",
+				"cloudwatch:DescribeAlarms",
+				"cloudwatch:DescribeAlarmHistory",
+				"cloudwatch:DescribeAlarmsForMetric",
+				"cloudwatch:DescribeAnomalyDetectors",
+				"cloudwatch:GetDashboard",
+				"cloudwatch:ListDashboards"
+			],
+			"Resource": "*"
+		},
+		{
+			"Sid": "AllowFISCommands",
+			"Effect": "Allow",
+			"Action": [
+				"fis:CreateExperimentTemplate",
+				"fis:DeleteExperimentTemplate",
+				"fis:GetAction",
+				"fis:GetExperiment",
+				"fis:GetExperimentTemplate",
+				"fis:GetTargetResourceType",
+				"fis:ListActions",
+				"fis:ListExperiments",
+				"fis:ListExperimentTemplates",
+				"fis:ListTagsForResource",
+				"fis:ListTargetResourceTypes",
+				"fis:StartExperiment",
+				"fis:StopExperiment",
+				"fis:TagResource",
+				"fis:UntagResource",
+				"fis:UpdateExperimentTemplate"
+			],
+			"Resource": "*"
+		},
+		{
+			"Sid": "AllowCostExpCommands",
+			"Effect": "Allow",
+			"Action": [
+				"ce:GetCostAndUsage",
+				"ce:GetDimensionValues",
+				"ce:GetCostForecast",
+				"ce:DescribeReport",
+				"ce:GetCostCategories",
+				"ce:GetCostAndUsageWithResources",
+				"ce:GetTags",
+				"ce:GetUsageForecast",
+				"ce:CreateReport"
+			],
+		"Resource": "*"
+        },
+		{
+			"Sid": "CloudShellCommands",
+			"Effect": "Allow",
+			"Action": [
+			  "cloudshell:*"
+			],
+			"Resource": "*"
+		},
+		{
+			"Sid": "AllowPassRoleForCnf",
+			"Effect": "Allow",
+			"Action": [
+			  "iam:GetRole",
+			  "iam:PassRole"
+			],
+			"Resource": [
+				"*"
+			],
+			"Condition": {
+			  "StringEquals": {"iam:PassedToService": "cloudformation.amazonaws.com"}
+			}
+		},
+		{
+			"Sid": "AllowPassRoleForCloudWatchCommands",
+			"Effect": "Allow",
+			"Action": [
+			  "iam:GetRole",
+			  "iam:PassRole"
+			],
+			"Resource": [
+				"*"
+			],
+			"Condition": {
+			  "StringEquals": {"iam:PassedToService": "cloudwatch.amazonaws.com"}
+			}
+		},
+		{
+			"Sid": "AllowPassRoleForAWSFISCommands",
+			"Effect": "Allow",
+			"Action": [
+			  "iam:GetRole",
+			  "iam:PassRole"
+			],
+			"Resource": [
+				"*"
+			],
+			"Condition": {
+			  "StringEquals": {"iam:PassedToService": "fis.amazonaws.com"}
+			}
+		}
+	]
+}
