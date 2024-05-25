@@ -6,3 +6,6 @@ Fundamentals of EC2 Spot Instances and recommended tools to launch Spot Instance
 <img width="1440" alt="Screenshot 2024-05-25 at 11 50 35 PM" src="https://github.com/yashdeored/ec2spotinstances/assets/152061059/0f3a85dd-939e-4fa7-a535-a55b080bd25e">
 <img width="1440" alt="Screenshot 2024-05-25 at 11 52 26 PM" src="https://github.com/yashdeored/ec2spotinstances/assets/152061059/2c17079c-38d7-44fd-a071-4efbf2279267">
 <img width="1440" alt="Screenshot 2024-05-25 at 11 52 42 PM" src="https://github.com/yashdeored/ec2spotinstances/assets/152061059/0fb4335a-1ca3-4222-bb96-d2db090009a2">
+
+
+![Uploading Screenshot 2024-05-25 at 11.56.30 PM.png…]()
