@@ -18,7 +18,7 @@ In this workshop, you will learn how to provision, manage, and maintain your Kub
 
   Running Spark Apps with EKS on Spot Instances  
 
-<img width="500" ![image](https://github.com/yashdeored/ec2spotinstances/assets/152061059/eb716774-01d3-4e39-9725-1eb05da36dba)>
+![image](https://github.com/yashdeored/ec2spotinstances/assets/152061059/eb716774-01d3-4e39-9725-1eb05da36dba)
 
 In this workshop, fill the roles of Data Engineer/Platform Engineer/Data Analyst and learn to build a data processing pipeline on Kubernetes with a focus on cost-efficiency, scale, and observability. Start with a ready-to-use Amazon EKS cluster and a AWS Cloud9 IDE with Terraform installed. Then, learn to use Data on EKS Blueprints to deploy Apache Airflow, Kubernetes Operator for Apache Spark and observability Add-ons. You must bring your laptop to participate.
 
